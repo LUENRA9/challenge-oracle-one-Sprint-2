@@ -14,7 +14,7 @@
     <title>HANG MAN</title>
     
 </header>
-<body>
+<body onload="myFunction(event)">
     
     
     <div class="contenedor">
@@ -23,9 +23,13 @@
         <h1 class="titulo" id="tituloId">JUEGO DEL AHORCADO</h1> 
         <form>
             
-            <input class="starButton" type="button" value="Empezar juego" onclick="cleanDisplay()">
-            <input class="agregarPalabra" type="button" value="Agregar nueva palabra">
+            <input id="startGame" class="starButton" type="button" value="Empezar juego" onclick="cleanDisplay()">
+            <input id="addWord" class="agregarPalabra" type="button" value="Agregar nueva palabra">
         </form>
+        <div class="game" >
+            
+            <p id="guiones" class="dibujarGuiones">HELLO</p>
+        </div>
     </div>
 
     

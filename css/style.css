@@ -82,3 +82,16 @@
     background: white;
     border-color: black;
 }
+
+.dibujarGuiones{
+    position: absolute;
+    width: 80%;
+    
+    
+    font-size: xx-large;
+    top: 70%;
+    left: 0;
+    right: 0;
+    text-align: center;
+   margin: auto;
+}
