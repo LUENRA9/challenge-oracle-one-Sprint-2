@@ -1,5 +1,5 @@
 
-
+var arrayPalabras=["HTML","PDF","WORD","EXCEL","GOOGLE"]
 document.addEventListener('keydown', function(event){
     alert(event);
 } );
@@ -8,9 +8,10 @@ function cleanDisplay(){
     document.getElementById("tituloId").style="display:none;";
     document.getElementById("startGame").style="display:none;";
     document.getElementById("addWord").style="display:none;";
+    index=Math.floor(Math.random() * 10);
     
-
-    var tamaño=tamañoPalabra("HTML");
+    console.log(arrayPalabras[index]);
+    var tamaño=tamañoPalabra(arrayPalabras[index]);
     var guiones="";
     while(tamaño>0){
         guiones+="    ___    ";
